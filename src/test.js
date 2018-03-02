@@ -17,7 +17,7 @@ module.exports = (apiClient) => {
      * @returns {unresolved}
      */
     const ping = () => {
-        return apiClient.request(namespace, 'ping', {});
+        return apiClient.request(namespace, 'ping', '');
     }
 
     return {
