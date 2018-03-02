@@ -5,22 +5,23 @@ const constants = require('./constants');
 module.exports = (apiClient) => {
 
     /**
-     * Current Namespace for calling ping
+     * Current Namespace for calling event apis
      *
      * @type String
      */
-    const namespace = 'test';
+    const namespace = 'event';
 
     /**
-     * Test the access to ivvy api
+     * Add or Updates a Event in iVvy
      *
+     * @param {Object} params See iVvy Api Document for parameters
      * @returns {unresolved}
      */
-    const ping = () => {
-        return apiClient.request(namespace, 'ping', {});
+    const addOrUpdateEvent = (params) => {
+        return apiClient.request(namespace, 'addOrUpdateEvent', params);
     }
 
     return {
-        ping : ping,
+        addOrUpdateEvent : addOrUpdateEvent,
     };
 };
