@@ -1,18 +1,18 @@
 {
-    "name": "iVvy-Api",
-    "version": "1.0.0",
+    "name": "ivvy-sdk",
+    "version": "0.0.1",
     "description": "iVvy API 1.0 SDK",
-    "main": "api.js",
+    "main": "index.js",
     "scripts": {
         "test": "jest"
     },
-    "repository": "git+https://github.com/ivvy/api-client-nodejs.git",
+    "repository": "git+https://github.com/ivvycode/ivvy-sdk-js.git",
     "author": "iVvy",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ivvy/api-client-nodejs/issues"
+        "url": "https://github.com/ivvycode/ivvy-sdk-js/issues"
     },
-    "homepage": "https://github.com/ivvy/api-client-nodejs#readme",
+    "homepage": "https://github.com/ivvycode/ivvy-sdk-js",
     "require": {},
     "dependencies": {
         "crypto-js": "^3.1.9-1",
