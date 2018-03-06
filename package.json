@@ -1,0 +1,30 @@
+{
+    "name": "ivvy-sdk",
+    "version": "0.0.1",
+    "description": "iVvy API 1.0 SDK",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": "git+https://github.com/ivvycode/ivvy-sdk-js.git",
+    "author": "iVvy",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ivvycode/ivvy-sdk-js/issues"
+    },
+    "homepage": "https://github.com/ivvycode/ivvy-sdk-js",
+    "require": {},
+    "dependencies": {
+        "crypto-js": "^3.1.9-1",
+        "isobject": "^3.0.1",
+        "moment": "^2.20.1",
+        "string": "^3.3.3",
+        "superagent": "^3.8.2"
+    },
+    "devDependencies": {
+        "jest": "^22.2.2",
+        "superagent-mock": "^3.6.0",
+        "superagent-mocker": "^0.5.2",
+        "tracer": "^0.8.11"
+    }
+}
