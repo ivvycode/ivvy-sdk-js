@@ -64,11 +64,32 @@ module.exports = (apiClient) => {
         return apiClient.request(namespace, 'addOrUpdateRoomDynamicRates', params);
     }
 
+    /**
+     * Removes room's dynamic rates
+     *
+     * @param {Object} params See iVvy Api Document for parameters
+     * @returns {unresolved}
+     */
+    const removeRoomDynamicRates = (params) => {
+        return apiClient.request(namespace, 'removeRoomDynamicRates', params);
+    }
+
+    /**
+     * Fetches contact list
+     *
+     * @param {Object} params See iVvy Api Document for parameters
+     * @returns {unresolved}
+     */
+    const getContactList = (params) => {
+        return apiClient.request(namespace, 'getContactList', params);
+    }
+
     return {
         getVenue : getVenue,
         getVenueList : getVenueList,
         addOrUpdateRoomCounts : addOrUpdateRoomCounts,
         addOrUpdateRatePlanBookingRules: addOrUpdateRatePlanBookingRules,
-        addOrUpdateRoomDynamicRates: addOrUpdateRoomDynamicRates
+        addOrUpdateRoomDynamicRates: addOrUpdateRoomDynamicRates,
+        getContactList: getContactList
     };
 };

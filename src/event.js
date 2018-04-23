@@ -21,7 +21,18 @@ module.exports = (apiClient) => {
         return apiClient.request(namespace, 'addOrUpdateEvent', params);
     }
 
+    /**
+     * Fetches List of Events
+     *
+     * @param {Object} params See iVvy Api Document for parameters
+     * @returns {unresolved}
+     */
+    const getEventList = (params) => {
+        return apiClient.request(namespace, 'getEventList', params);
+    }
+
     return {
         addOrUpdateEvent : addOrUpdateEvent,
+        getEventList: getEventList
     };
 };
