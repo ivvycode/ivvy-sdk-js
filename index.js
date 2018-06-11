@@ -7,6 +7,7 @@ module.exports = (config) => {
         event : require('./src/event')(apiClient),
         test  : require('./src/test')(apiClient),
         venue : require('./src/venue')(apiClient),
-        contact : require('./src/contact')(apiClient)
+        contact : require('./src/contact')(apiClient),
+        account : require('./src/account')(apiClient)
     };
 };
